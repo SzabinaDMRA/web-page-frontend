@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* ---------------------- Variables ---------------------- */
+/* ------------------- Variables ------------------------ */
 
 :root{
     /* text colors */
-    --text-gray: #808291;
+    --text-gray : #808291;
     --text-white: #f8f9fa;
     --text-light: #f6f6f6;
-    --text-dark: #1A3260;
-    --text-dark2: #1A3760D4;
-    --text-red: #ff4d6d;
+    --text-dark : #1A3260;
+    --text-dark2 : #1A3760D4;
+    --text-red : #ff4d6d;
     --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
     --bg-blue: rgb(249, 243, 255);
     --bg-red: rgb(254, 247, 252);
-    --bg-yellow: rgb(255, 255, 246);
+    --bg-yellow:rgb(255, 255, 246);
     --bg-purple: rgb(246, 255, 255);
 
-    /* font family */
-    --font-poppins: "Poppins", 'sans-serif';
+    /* font familiy */
+    --font-poppins : "Poppins", 'sans-serif';
 
     /* gradient colors */
-    --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+    --bg-gradient : linear-gradient(to right, #ff512f, #dd2476); 
     --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
-    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3 );
+    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
     /* images */
-    --bg-cover: url('./assets/bgimg1.png');
+    --bg-cover : url('./assets/bgimg1.png');
     --bg-image1: url('./assets/img1.png');
     --bg-image2: url('./assets/img2.png');
     --bg-image3: url('./assets/img3.png');
-}   
+}
 
-*>*{
+* > * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -42,13 +42,13 @@ a{
 }
 
 ul{
-    list-style: none;
+    list-style-type: none;
 }
 
 
-/* ---------------------- /Variables ---------------------- */
+/* ------------------- /Variables ------------------------ */
 
-/* ---------------------- Global Classes ---------------------- */
+/* ------------------- Global Classes ------------------------ */
 
 .text-dark{
     color: var(--text-dark);
@@ -59,7 +59,7 @@ ul{
 }
 
 .text-light{
-    color:var(--text-light)
+    color: var(--text-light);
 }
 
 .text-gray{
@@ -69,7 +69,6 @@ ul{
 .text-red{
     color: var(--text-red);
 }
-
 
 .bg-gradient{
     background: var(--bg-gradient);
@@ -112,11 +111,11 @@ ul{
     line-height: 1.5em;
 }
 
-.font-md{
+.text-md{
     font-size: 1.5em;
 }
 
-.font-lg{
+.text-lg{
     font-size: 2.2em;
     line-height: 3rem;
 }
@@ -137,7 +136,7 @@ ul{
     display: flex;
 }
 
-.flew-row{
+.flex-row{
     flex-direction: row;
 }
 
@@ -149,7 +148,6 @@ ul{
     flex-wrap: wrap;
 }
 
-
 .flex-initial{
     flex: 0 1 auto;
 }
@@ -157,7 +155,6 @@ ul{
 .flex-grow{
     flex-grow: 1;
 }
-
 
 .justify-center{
     justify-content: center;
@@ -185,18 +182,15 @@ ul{
     padding-bottom: 1rem;
 }
 
-
 .py-5{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-
 .py-10{
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
 }
-
 
 .px-5{
     padding-left: 1.5rem;
@@ -212,7 +206,6 @@ ul{
     color: var(--text-dark2);
     font-weight: bold;
 }
-
 
 .link:hover{
     color: var(--text-red);
@@ -231,10 +224,9 @@ ul{
     font-weight: bold;
 }
 
-.btn-shadow{
+.btn-shodow{
     box-shadow: var(--box-shadow);
 }
-
 
 .btn-primary:hover{
     background: var(--bg-gradient-indigo);
@@ -245,7 +237,7 @@ ul{
     object-fit: fill;
 }
 
-.d-inline{
+.d-iniine{
     display: inline-block;
 }
 
@@ -257,10 +249,9 @@ ul{
     display: grid;
 }
 
-.cols{
+.cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-
 
 .w-100{
     width: 100%;
@@ -270,14 +261,59 @@ ul{
     width: 50%;
 }
 
-/* ---------------------- /Global Classes ---------------------- */
 
-/* ---------------------- Navigation Style ---------------------- */
+/* ------------------- /Global Classes ------------------------ */
+
+/* ------------------- Navigation Style ------------------------ */
+
+#nav{
+position: absolute;
+top: 0; left: 0;
+width: 100%;
+padding: 1rem 1.5rem;
+background: var(--text-light);
+flex-direction: column;
+}
+
+
+#nav .collapse{
+    max-height: 0px;
+    overflow-y: hidden;
+} 
 
 
 
+#nav .collapse ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+} 
 
 
+#nav .collapse ul > li{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+}
 
 
-/* ---------------------- /Navigation Style ---------------------- */
+#nav .toggle-btn > button{
+    font-size: 2em;
+    position: absolute;
+    right: 0; top: 0;
+    padding: 1rem;
+    color: var(--text-dark2);
+}
+
+
+#nav .flex-initial ul button{
+    display: none;
+}
+
+
+.active{
+    max-height: 50vh;
+}
+
+
+/* ------------------- /Navigation Style ------------------------ */
