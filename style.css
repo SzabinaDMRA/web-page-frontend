@@ -269,9 +269,13 @@ ul{
 /* ------------------- Media Query ------------------------ */
 
 /* for large screen sm (640px) */
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .container{
         max-width: 640px;
+    }
+
+    .sm-text-xl{
+        font-size: 3em;
     }
 }
 
@@ -382,3 +386,27 @@ ul{
 
 
 /* ------------------- /Navigation Style ------------------------ */
+
+
+
+/* ------------------- Banner area Style ------------------------ */
+
+#site-main .banner-area{
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover) no-repeat;
+    background-position-x: right;
+    z-index: -99;
+
+}
+
+
+#site-main .banner-area .banner-title{
+    height: 95vh;
+    padding-top: 16rem;
+}
+
+
+
+
+/* ------------------- /Banner area Style ------------------------ */
