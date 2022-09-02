@@ -502,3 +502,13 @@ ul{
     text-align: center;
 }
 /* ------------------- /counting area Style ------------------------ */
+
+
+/* ------------------- card area Style ------------------------ */
+
+#site-main .card-area .grid{
+    column-gap: 4em;
+    row-gap: 2em;
+}
+
+/* ------------------- /card area Style ------------------------ */
