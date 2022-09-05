@@ -261,6 +261,11 @@ ul{
     width: 50%;
 }
 
+.btn-shadow{
+    box-shadow: var(--box-shadow);
+
+}
+
 
 /* ------------------- /Global Classes ------------------------ */
 
@@ -516,3 +521,18 @@ ul{
 }
 
 /* ------------------- /recent work area Style ------------------------ */
+
+
+
+/* ------------------- Card area Style ------------------------ */
+
+#site-main .article-area .grid{
+    column-gap: 5em;
+
+}
+
+#site-main .article-area .card article{
+    border-radius: 10px;
+}
+
+/* ------------------- /Card area Style ------------------------ */
