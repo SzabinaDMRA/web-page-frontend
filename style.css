@@ -280,6 +280,11 @@ ul{
     .sm-text-xl{
         font-size: 3em;
     }
+
+    .sm-px-10{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
 }
 
 /* for large screen md (768px) */
@@ -536,3 +541,14 @@ ul{
 }
 
 /* ------------------- /Card area Style ------------------------ */
+
+
+/* ------------------- Ready area Style ------------------------ */
+#site-main .ready-area .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ------------------- /Ready area Style ------------------------ */
